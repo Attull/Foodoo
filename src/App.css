@@ -1,3 +1,4 @@
+/* Navbar */
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -10,6 +11,27 @@
 
 }
 
+/* Category Menu */
+
+.category{
+  padding: 20px;
+}
+.category-btns button{
+  margin-top: 10px;
+  font-size: 20px;
+  color:black;
+  background-color: #C96868;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.category-btns button:hover{
+  color:white;
+  background-color: black;
+  cursor: pointer;
+}
 @media (max-width:576px){
   .navbar{
     flex-direction: column;
