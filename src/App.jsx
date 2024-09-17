@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import CategoryMenu from './components/CategoryMenu'
+import FoodItems from './components/FoodItems'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar/>
       <CategoryMenu/>
+      <FoodItems/>
     </>
   )
 }

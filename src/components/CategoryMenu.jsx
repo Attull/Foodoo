@@ -3,7 +3,7 @@ import React from 'react'
 const CategoryMenu = () => {
   return (
     <div className='category'>
-        <h1>Find the best food</h1>
+        <h2>Find the best food</h2>
         <div className='category-btns'>
             <button>All Foods</button>
             <button>Lunch</button>
