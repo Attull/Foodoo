@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import CategoryMenu from './components/CategoryMenu'
 import FoodItems from './components/FoodItems'
+import AddtoCart from './components/AddtoCart'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <CategoryMenu/>
       <FoodItems/>
+      <AddtoCart/>
     </>
   )
 }
