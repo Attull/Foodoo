@@ -9,13 +9,17 @@ import AddtoCart from './components/AddtoCart'
 
 function App() {
 
+  const [showCart, setShowCart] = useState(false)
 
   return (
     <>
       <Navbar/>
-      <CategoryMenu/>
-      <FoodItems/>
-      <AddtoCart/>
+      {/* <CategoryMenu/>
+      <FoodItems/> */}
+      {
+        (showCart) ?   <AddtoCart setShowCart={setShowCart}/> :  <i className="fa-solid fa-cart-shopping" onClick={()=> setShowCart(true)}></i>
+      }
+    
     </>
   )
 }

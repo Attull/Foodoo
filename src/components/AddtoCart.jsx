@@ -1,12 +1,14 @@
 import React from 'react'
 import ItemsCart from './ItemsCart'
 
-const AddtoCart = () => {
+const AddtoCart = (props) => {
+
+  const {setShowCart} = props
   return (
     <div className='cart-container'>
         <div className='cart-header'>
             <h1>My Order</h1>
-            <i class="fa-regular fa-circle-xmark"></i>
+            <i class="fa-regular fa-circle-xmark" onClick={()=> setShowCart(false)}></i>
         </div>
         <div className='cart-body'>
             <ItemsCart />
