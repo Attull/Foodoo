@@ -14,8 +14,8 @@ function App() {
   return (
     <>
       <Navbar/>
-      {/* <CategoryMenu/>
-      <FoodItems/> */}
+      <CategoryMenu/>
+      <FoodItems/>
       {
         (showCart) ?   <AddtoCart setShowCart={setShowCart}/> :  <i className="fa-solid fa-cart-shopping" onClick={()=> setShowCart(true)}></i>
       }
