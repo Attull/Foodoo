@@ -174,3 +174,45 @@
   width: 50px;
   border-radius: 50%;
 }
+
+.food-item {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.food-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px; /* Space between image and text */
+}
+
+.food-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-name {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.food-price {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.food-rating {
+  color: #ffc107;
+}
+
+.food-quantity {
+  font-size: 0.9em;
+  color: #555;
+}
