@@ -1,6 +1,10 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { removeFromCart } from '../redux/cartSlice'
 
-const CartItem = ({ img, name, price, rating, quantity }) => {
+const CartItem = ({ id,img, name, price, rating, quantity }) => {
+
+    const dispatch =  useDispatch()
     return (
         <div className="food-item">
             <img src={img} alt={name} className="food-image" />
@@ -13,6 +17,7 @@ const CartItem = ({ img, name, price, rating, quantity }) => {
                 <div className="food-quantity">
                     <span>Quantity: {quantity}</span>
                 </div>
+                <button style={{width:"50%"}} onClick={()=>dispatch(removeFromCart({id}))}>Delete</button>
             </div>
         </div>
     )

@@ -12,6 +12,7 @@ const ItemsCart = () => {
         cartItems.map((val)=>{
           return(
             <CartItem 
+              id={val.id}
               img={val.img}
               name={val.name}
               price={val.price}
