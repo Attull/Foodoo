@@ -16,7 +16,7 @@ const ItemsCart = () => {
               name={val.name}
               price={val.price}
               rating={val.rating}
-              quantity={0}
+              quantity={val.qty}
             
             />
           )

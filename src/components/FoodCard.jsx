@@ -4,7 +4,7 @@ import { addToCart } from '../redux/cartSlice'
 
 const FoodCard = (props) => {
 
-  const {img, name, price, rating, desc} = props
+  const {img, name, price, rating, desc,id} = props
   const dispatch = useDispatch()
     return (
         <div className="food-card">
@@ -16,7 +16,7 @@ const FoodCard = (props) => {
             <span className="price">${price}</span>
             <span className="rating">Rating: {rating} ⭐</span>
           </div>
-          <button className='cart-btn' onClick={()=> dispatch(addToCart({img, name, price,rating}))}>Add to cart</button>
+          <button className='cart-btn' onClick={()=> dispatch(addToCart({id,img, name, price,rating, qty:1}))}>Add to cart</button>
         </div>
       </div>
     )
