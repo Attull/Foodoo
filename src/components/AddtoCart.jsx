@@ -12,7 +12,6 @@ const AddtoCart = (props) => {
         </div>
         <div className='cart-body'>
             <ItemsCart />
-            <ItemsCart/>
         </div>
         <div class="cart-footer">
             <h3>Items : 2</h3>
